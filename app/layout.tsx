@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import { CookieProvider } from "@/components";
 import { ThemeShell } from "@/components/habits/Themes";
+import RecoilProvider from "@/libs/recoils/Provider";
 
 const roboto = Roboto({ weight: ["100", "300", "400", "500", "700", "900"], subsets: ["latin"] });
 export const metadata: Metadata = {
@@ -22,7 +23,9 @@ export default function RootLayout({
       <body className={roboto.className}>
         <ThemeShell>
           <CookieProvider>
-            {children}
+            <RecoilProvider>
+              {children}
+            </RecoilProvider>
           </CookieProvider>
         </ThemeShell>
       </body>
