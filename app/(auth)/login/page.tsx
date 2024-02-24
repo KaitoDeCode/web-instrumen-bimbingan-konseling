@@ -1,17 +1,19 @@
 import { AuthCard } from '@/components'
-import { Metadata } from 'next';
+import { setTitle } from '@/utils'
+import { Metadata } from 'next'
 
+
+
+
+export const metadata:Metadata = setTitle('Login')
 
 type Props = {}
 
 const page = (props: Props) => {
   return (
-    <>
-
     <AuthCard>
         Hello
     </AuthCard>
-    </>
   )
 }
 
