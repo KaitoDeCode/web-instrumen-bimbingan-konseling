@@ -7,7 +7,7 @@ type Props = {
 
 const AuthContent = (props: Props) => {
   return (
-    <div>
+    <div className='bg-base-200 w-1/2'>
       {props.children}
     </div>
   )
