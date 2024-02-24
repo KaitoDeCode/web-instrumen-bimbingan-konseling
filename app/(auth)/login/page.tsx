@@ -11,7 +11,7 @@ type Props = {}
 
 const page = (props: Props) => {
   return (
-    <AuthCard reverse={false} url='/img/student-2.jpg'>
+    <AuthCard reverse={false} url='/img/student-5.jpg'>
         <LoginFragments/>
     </AuthCard>
   )

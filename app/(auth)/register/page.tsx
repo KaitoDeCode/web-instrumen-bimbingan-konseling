@@ -9,7 +9,7 @@ type Props = {}
 
 const RegisterPage = (props: Props) => {
   return (
-    <AuthCard reverse={true} url='/img/student-2.jpg'>
+    <AuthCard reverse={true} url='/img/student-4.jpg'>
       <RegisterFragments/>
     </AuthCard>
   )

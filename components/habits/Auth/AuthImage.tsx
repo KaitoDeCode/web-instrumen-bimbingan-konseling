@@ -8,7 +8,7 @@ type Props = {
 const AuthImage = (props: Props) => {
   return (
     <div className='w-1/2 h-auto overflow-hidden rounded-md shadow-md'>
-        <Image src={props.url} height={1000} width={1000} alt='Student'/>
+        <Image className='h-full object-cover' src={props.url} height={1000} width={1000} alt='Student'/>
     </div>
   )
 }
