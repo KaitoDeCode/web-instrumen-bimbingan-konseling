@@ -1,13 +1,14 @@
 import React from 'react'
+import AuthImage from './AuthImage'
 
 type Props = {
-    children: React.ReactNode
+    children: React.ReactNode,
 }
 
 const AuthContent = (props: Props) => {
   return (
     <div>
-        {props.children}
+      {props.children}
     </div>
   )
 }
