@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import AuthImage from './AuthImage'
 import AuthContent from './AuthContent'
