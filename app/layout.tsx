@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import { CookieProvider } from "@/components";
+import { ThemeShell } from "@/components/habits/Themes";
 
 const roboto = Roboto({ weight: ["100", "300", "400", "500", "700", "900"], subsets: ["latin"] });
 export const metadata: Metadata = {
@@ -19,9 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <CookieProvider>
-          {children}
-        </CookieProvider>
+        <ThemeShell>
+          <CookieProvider>
+            {children}
+          </CookieProvider>
+        </ThemeShell>
       </body>
     </html>
   );

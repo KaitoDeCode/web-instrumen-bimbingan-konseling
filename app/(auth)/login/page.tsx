@@ -12,7 +12,7 @@ type Props = {}
 const page = (props: Props) => {
   return (
     <AuthCard url='/img/student-2.jpg'>
-        Hello
+        <h1 className='text-primary'>Login</h1>
     </AuthCard>
   )
 }
