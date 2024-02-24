@@ -1,4 +1,4 @@
-import { AuthCard } from '@/components'
+import { AuthCard, LoginFragments } from '@/components'
 import { setTitle } from '@/utils'
 import { Metadata } from 'next'
 
@@ -12,7 +12,7 @@ type Props = {}
 const page = (props: Props) => {
   return (
     <AuthCard reverse={false} url='/img/student-2.jpg'>
-        <h1 className='text-primary'>Login</h1>
+        <LoginFragments/>
     </AuthCard>
   )
 }
